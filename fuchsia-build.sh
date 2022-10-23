@@ -4,6 +4,7 @@ curl -s "https://fuchsia.googlesource.com/fuchsia/+/HEAD/scripts/bootstrap?forma
 export PATH=~/fuchsia/.jiri_root/bin:$PATH
 source ~/fuchsia/scripts/fx-env.sh
 source ~/.bash_profile
+sudo ln -s ~/fuchsia/scripts/fx /usr/bin
 fx setup-ufw
 fx set workstation_eng.chromebook-x64 --release
 fx goma
